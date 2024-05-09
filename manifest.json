@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
-  "name": "URL Phishing Detection",
+  "name": "SecureLinksAudit",
   "version": "0.1",
   "icons": {
-    "16": "SecureLinkAuditLogo.png",
-    "48": "SecureLinkAuditLogo.png",
-    "128": "SecureLinkAuditLogo.png"
+    "16": "SLA_Logo.png",
+    "48": "SLA_Logo.png",
+    "128": "SLA_Logo.png"
   },
   "background": {
     "scripts": ["msgPopUp.js"]

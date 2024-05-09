@@ -1,10 +1,8 @@
 #!/usr/bin/python
-
 import time
 
 
 def calculate_metrics(y_test, Y_predicted):
-
     from sklearn import metrics
     from sklearn.metrics import classification_report, confusion_matrix
 
@@ -36,7 +34,6 @@ def calculate_metrics(y_test, Y_predicted):
 
 
 def neural_network(dataset, class_labels, test_size):
-
     import numpy as np
     import pandas as pd
     from sklearn.cross_validation import train_test_split
@@ -58,12 +55,11 @@ def neural_network(dataset, class_labels, test_size):
 
 
 def random_forests(dataset, class_labels, test_size):
-
     import numpy as np
     import pandas as pd
-    from sklearn import metrics
     from sklearn.cross_validation import train_test_split
     from sklearn.ensemble import RandomForestClassifier
+    from sklearn import metrics
 
     X = pd.read_csv(dataset)
     Y = pd.read_csv(class_labels)
@@ -78,10 +74,9 @@ def random_forests(dataset, class_labels, test_size):
 
 
 def support_vector_machines(dataset, class_labels, test_size):
-
     import numpy as np
-    import pandas as pd
     from sklearn import svm
+    import pandas as pd
     from sklearn.cross_validation import train_test_split
 
     X = pd.read_csv(dataset)
@@ -98,7 +93,6 @@ def support_vector_machines(dataset, class_labels, test_size):
 
 
 def main():
-
     dataset = "dataSet.csv"
     class_labels = "targetLabels.csv"
     test_size = 0.3
